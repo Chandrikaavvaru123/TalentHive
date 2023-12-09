@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "talent-hive:build:production"
+              "buildTarget": "talent-hive:build:production"
             },
             "development": {
-              "browserTarget": "talent-hive:build:development"
+              "buildTarget": "talent-hive:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "talent-hive:build"
+            "buildTarget": "talent-hive:build"
           }
         },
         "test": {
@@ -93,7 +93,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           }
