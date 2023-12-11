@@ -1,0 +1,24 @@
+
+.card {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    width: 300px;
+    max-width: 100%;
+}
+
+.login-card {
+    position: relative;
+    z-index: 1;
+    .mb-3{
+        input{
+            width: -webkit-fill-available;
+        }
+    }
+    .login-btn{
+        margin-top: 25px;
+        button{
+            width: -webkit-fill-available;
+        }
+    }
+}
