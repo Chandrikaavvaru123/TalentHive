@@ -4,13 +4,40 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
-$background-image: url('./assets/Images/main_BG.jpg');
-
-html,
 body {
-  background-image: $background-image;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+// Fonts
+@font-face {
+    font-family: "Raleway";
+    src: url("/assets/Fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/assets/Fonts/Raleway/static/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Raleway_Italic";
+    src: url("/assets/Fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Quicksand_Bold";
+    src: url("/assets/Fonts/Quicksand/static/Quicksand-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+
+
+
+
+@mixin heading01 {
+    font-family: "Quicksand_Bold", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
 }

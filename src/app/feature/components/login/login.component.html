@@ -1,26 +1,26 @@
-<div class="d-flex h-100 justify-content-center align-items-center">
+<!-- <div class="d-flex h-100 justify-content-center align-items-center">
   <div class="card login-card">
     <div class="card-body">
-      <h5 class="card-title">Login</h5>
+      <h4 class="card-title"> <img src="../../../../assets//Images/hand.svg" alt="TH_Logo"> Welcome to Talent Hive!</h4>
       <form [formGroup]="loginForm" (ngSubmit)="login()">
         <div class="mb-3">
-          <label for="userName">User Name: </label>
+          <label for="userName">Username </label>
           <input id="userName" type="text" formControlName="userName" />
           <span
             class="text-danger"
             *ngIf="(loginForm?.controls?.['userName']?.errors?.['required']) && (loginForm?.controls?.['userName']?.touched || submitClicked)"
           >
-            Please enter username
+            Please enter the username
           </span>
         </div>
         <div class="mb-3">
-          <label for="password">Password: </label>
+          <label for="password">Password </label>
           <input id="password" type="password" formControlName="password" />
           <span
             class="text-danger"
             *ngIf="(loginForm?.controls?.['password']?.errors?.['required']) && (loginForm?.controls?.['password']?.touched || submitClicked)"
           >
-            Please enter password
+            Please enter the password
           </span>
         </div>
         <div class="login-btn">
@@ -29,6 +29,45 @@
           </button>
         </div>
       </form>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="main-div">
+  <div class="row main-content bg-success text-center">
+    <div class="col-md-4 text-center company__info">
+      <span class="company__logo"><h2><span class="fa fa-android"></span></h2></span>
+      <img src="../../../../assets/Images/main_logo.png" alt="">
+      Find your dream job and connect with top employers. <br> Talent Hive: Where careers thrive.
+    </div>
+    <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+      <div class="container-fluid">
+        <div class="row">
+          <h3 class="card-title"> <img src="../../../../assets//Images/hand.svg" alt="TH_Logo"> Welcome to Talent Hive!</h3>
+        </div>
+        <div class="row">
+          <form [formGroup]="loginForm" (ngSubmit)="login()" class="form-group">
+            <div class="row">
+              <input id="userName" type="text" formControlName="userName" class="form__input" placeholder="Username" /> 
+            </div>
+            <div class="row">
+              <!-- <span class="fa fa-lock"></span> -->
+              <input id="password" type="password" formControlName="password"  class="form__input" placeholder="Password">
+            </div>
+            <div class="row">
+              <input type="checkbox" name="remember_me" id="remember_me" class="">
+              <label for="remember_me">Remember Me!</label>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit" class="btn">
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <p>Don't have an account? <a href="#">Register Here</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

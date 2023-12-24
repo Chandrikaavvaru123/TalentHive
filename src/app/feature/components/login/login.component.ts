@@ -40,10 +40,6 @@ export class LoginComponent {
         console.log("Sucessfull");
       })
     }
-    else{
-      
-    }
-
 
   }
 }
